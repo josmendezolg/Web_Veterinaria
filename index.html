@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es-DO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PataFeliz | Clínica Veterinaria en Santo Domingo</title>
+
+  <!-- SEO -->
+  <meta name="description" content="PataFeliz, clínica veterinaria en República Dominicana: consulta general, cirugías y peluquería para tus mascotas. Agenda tu cita hoy.">
+  <meta name="keywords" content="veterinaria, clínica veterinaria, mascotas, perros, gatos, cirugía veterinaria, peluquería canina, Santo Domingo">
+  <meta name="author" content="Clínica Veterinaria PataFeliz">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#2C3E50">
+
+  <!-- Open Graph (compartir en redes) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PataFeliz | Clínica Veterinaria">
+  <meta property="og:description" content="Cuidado profesional y cariñoso para tu mejor amigo.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1583337130417-3346a1be7dee">
+  <meta property="og:locale" content="es_DO">
+
+  <!-- Datos estructurados (SEO local) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VeterinaryCare",
+    "name": "Clínica Veterinaria PataFeliz",
+    "telephone": "+1-809-555-0123",
+    "image": "https://images.unsplash.com/photo-1583337130417-3346a1be7dee",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. Winston Churchill #45",
+      "addressLocality": "Santo Domingo",
+      "addressCountry": "DO"
+    },
+    "openingHours": ["Mo-Fr 08:00-19:00", "Sa 09:00-14:00"]
+  }
+  </script>
+
+  <!-- Rendimiento: conexión anticipada a los CDN e imágenes -->
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+  <link rel="preconnect" href="https://randomuser.me" crossorigin>
+
+  <!-- Bootstrap 5.3.0 y Font Awesome 6.0 (CDN oficiales) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- CSS personalizado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- ========== MENÚ FIJO SUPERIOR ========== -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top app-navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#inicio"><i class="fa-solid fa-paw me-2" aria-hidden="true"></i>PataFeliz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal"
+                aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="#equipo">Equipo</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ========== INICIO ========== -->
+    <section id="inicio" class="hero" aria-labelledby="titulo-inicio">
+      <img class="hero-img" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee"
+           alt="Perro feliz en una clínica veterinaria" fetchpriority="high" width="1600" height="900">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content text-center text-white">
+        <h1 id="titulo-inicio" class="display-4 fw-bold">🐶 Cuidamos a tu mejor amigo 🐱</h1>
+        <p class="lead mx-auto hero-text">
+          En PataFeliz combinamos medicina veterinaria de calidad con mucho cariño. Consultas, cirugías y estética
+          para que tu mascota viva sana, feliz y por muchos años a tu lado. ❤️🐾
+        </p>
+        <a href="#contacto" class="btn btn-accent btn-lg px-5 py-3 mt-3" data-track="cta-agendar">
+          <i class="fa-solid fa-calendar-check me-2" aria-hidden="true"></i>¡Agenda tu cita!
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== SERVICIOS ========== -->
+    <section id="servicios" class="py-5" aria-labelledby="titulo-servicios">
+      <div class="container">
+        <h2 id="titulo-servicios" class="section-title text-center">Nuestros Servicios</h2>
+        <p class="text-center section-sub">Todo lo que tu mascota necesita en un solo lugar.</p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card service-card h-100">
+              <img src="https://purina.com.do/sites/default/files/2022-10/purina-consulta-veterinaria-para-mascotas-lo-que-debes-saber.jpg"
+                   class="card-img-top" alt="Veterinario realizando una consulta general a una mascota" loading="lazy">
+              <div class="card-body text-center">
+                <div class="service-icon"><i class="fa-solid fa-stethoscope" aria-hidden="true"></i></div>
+                <h3 class="card-title h4">Consulta General</h3>
+                <p class="card-text">Chequeos completos, vacunación y desparasitación para mantener a tu mascota saludable.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card service-card h-100">
+              <img src="https://holavet.com.ar/wp-content/uploads/2022/04/close-up-on-veterinarian-taking-care-of-pet-1.webp"
+                   class="card-img-top" alt="Veterinario cuidando a una mascota" loading="lazy">
+              <div class="card-body text-center">
+                <div class="service-icon"><i class="fa-solid fa-syringe" aria-hidden="true"></i></div>
+                <h3 class="card-title h4">Cirugías</h3>
+                <p class="card-text">Procedimientos seguros con equipo moderno y seguimiento postoperatorio personalizado.</p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <article class="card service-card h-100">
+              <img src="https://neozoo.com.ar/wp-content/uploads/2023/06/Iconos-e-imagenes-09.png"
+                   class="card-img-top" alt="Servicio de peluquería para mascotas" loading="lazy">
+              <div class="card-body text-center">
+                <div class="service-icon"><i class="fa-solid fa-scissors" aria-hidden="true"></i></div>
+                <h3 class="card-title h4">Peluquería</h3>
+                <p class="card-text">Baño, corte y cuidado estético para que luzca increíble y se sienta cómodo.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EQUIPO ========== -->
+    <section id="equipo" class="py-5 bg-soft" aria-labelledby="titulo-equipo">
+      <div class="container">
+        <h2 id="titulo-equipo" class="section-title text-center">Nuestro Equipo</h2>
+        <p class="text-center section-sub">Profesionales apasionados por el bienestar animal.</p>
+        <div class="row g-4">
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card team-card h-100 text-center p-4">
+              <img src="https://randomuser.me/api/portraits/women/45.jpg" class="team-photo mx-auto" alt="Dra. Ana López" loading="lazy" width="140" height="140">
+              <h3 class="h5 mt-3 mb-1">Dra. Ana López</h3>
+              <p class="team-role">Medicina General</p>
+              <p class="mb-0">Más de 10 años de experiencia cuidando perros y gatos, con un enfoque preventivo y cercano.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <article class="card team-card h-100 text-center p-4">
+              <img src="https://randomuser.me/api/portraits/men/75.jpg" class="team-photo mx-auto" alt="Dr. Carlos Méndez" loading="lazy" width="140" height="140">
+              <h3 class="h5 mt-3 mb-1">Dr. Carlos Méndez</h3>
+              <p class="team-role">Cirugía Veterinaria</p>
+              <p class="mb-0">Especialista en cirugía de tejidos blandos y ortopedia, con técnicas mínimamente invasivas.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4 mx-md-auto mx-lg-0">
+            <article class="card team-card h-100 text-center p-4">
+              <img src="https://randomuser.me/api/portraits/women/68.jpg" class="team-photo mx-auto" alt="Dra. Laura Gómez" loading="lazy" width="140" height="140">
+              <h3 class="h5 mt-3 mb-1">Dra. Laura Gómez</h3>
+              <p class="team-role">Dermatología y Estética</p>
+              <p class="mb-0">Cuida la piel y el pelaje de tus mascotas con tratamientos suaves y productos de calidad.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LO QUE DICEN NUESTROS CLIENTES ========== -->
+    <section id="clientes" class="py-5" aria-labelledby="titulo-clientes">
+      <div class="container">
+        <h2 id="titulo-clientes" class="section-title text-center">Lo que dicen nuestros clientes</h2>
+        <p class="text-center section-sub">Familias felices, mascotas aún más felices. 🐾</p>
+
+        <!-- Los botones quedan FUERA del grupo de tarjetas -->
+        <div class="reviews-wrap" role="region" aria-roledescription="carrusel" aria-label="Opiniones de clientes">
+          <button type="button" class="carousel-btn" id="reviewsPrev" aria-label="Opiniones anteriores">
+            <i class="fa-solid fa-chevron-left" aria-hidden="true"></i>
+          </button>
+
+          <div class="reviews-viewport">
+            <div class="reviews-track" id="reviewsTrack"></div>
+          </div>
+
+          <button type="button" class="carousel-btn" id="reviewsNext" aria-label="Opiniones siguientes">
+            <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+          </button>
+        </div>
+        <p class="text-center mt-3 text-muted small" id="reviewsStatus" aria-live="polite"></p>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTO ========== -->
+    <section id="contacto" class="py-5 bg-soft" aria-labelledby="titulo-contacto">
+      <div class="container">
+        <h2 id="titulo-contacto" class="section-title text-center">Contáctanos</h2>
+        <p class="text-center section-sub">Estamos listos para atender a tu mascota.</p>
+        <div class="row g-4 align-items-stretch">
+
+          <div class="col-12 col-lg-5">
+            <div class="card contact-card h-100 text-center p-4">
+              <i class="fa-solid fa-phone-volume contact-icon" aria-hidden="true"></i>
+              <p class="mb-1 text-muted">Llámanos</p>
+              <a class="phone-big" href="tel:+18095550123" data-track="llamar">(809) 555-0123</a>
+              <p class="mt-3 mb-4">Atención de emergencias y citas, de lunes a sábado.</p>
+              <a class="btn btn-whatsapp btn-lg" href="https://wa.me/18095550123?text=Hola%20PataFeliz%2C%20quiero%20agendar%20una%20cita%20para%20mi%20mascota%20%F0%9F%90%B6"
+                 target="_blank" rel="noopener noreferrer" data-track="whatsapp">
+                <i class="fa-brands fa-whatsapp me-2" aria-hidden="true"></i>Escríbenos por WhatsApp
+              </a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-7">
+            <form id="contactForm" class="card form-card p-4 h-100" novalidate>
+              <h3 class="h4 mb-3">Envíanos un mensaje ✉️</h3>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" autocomplete="name" required minlength="3" maxlength="60">
+                <div class="invalid-feedback">Escribe tu nombre (mínimo 3 caracteres).</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Correo electrónico</label>
+                <input type="email" class="form-control" id="email" name="email" autocomplete="email" required maxlength="100">
+                <div class="invalid-feedback">Escribe un correo válido, por ejemplo: nombre@correo.com</div>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required minlength="10" maxlength="800"></textarea>
+                <div class="invalid-feedback">Cuéntanos cómo ayudarte (mínimo 10 caracteres).</div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg align-self-start">
+                <i class="fa-solid fa-paper-plane me-2" aria-hidden="true"></i>Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <h3 class="h5"><i class="fa-solid fa-paw me-2" aria-hidden="true"></i>PataFeliz</h3>
+          <p class="mb-0">Cuidado veterinario con amor y profesionalismo.</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5">Dirección y horarios</h3>
+          <address class="mb-2">
+            <i class="fa-solid fa-location-dot me-2" aria-hidden="true"></i>Av. Winston Churchill #45, Santo Domingo, R.D.
+          </address>
+          <p class="mb-0"><i class="fa-solid fa-clock me-2" aria-hidden="true"></i>Lun–Vie: 8:00 am – 7:00 pm</p>
+          <p class="mb-0"><i class="fa-solid fa-clock me-2" aria-hidden="true"></i>Sáb: 9:00 am – 2:00 pm</p>
+        </div>
+        <div class="col-12 col-md-4">
+          <h3 class="h5">Síguenos</h3>
+          <ul class="social list-unstyled d-flex gap-2 mb-0">
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a></li>
+            <li><a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a></li>
+            <li><a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-light opacity-25 mt-4">
+      <p class="text-center small mb-0">© <span id="year">2025</span> Clínica Veterinaria PataFeliz. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- ========== MODAL CONFIRMACIÓN ========== -->
+  <div class="modal fade" id="confirmModal" tabindex="-1" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content text-center p-3">
+        <div class="modal-body">
+          <div class="modal-emoji" aria-hidden="true">📧🐾🎉</div>
+          <h2 class="h4" id="confirmModalLabel">¡Tu mensaje está en camino!</h2>
+          <p class="mb-1">Se abrió tu aplicación de correo con el mensaje listo para enviar. ✅</p>
+          <p class="mb-0">Solo presiona <strong>Enviar</strong> y nuestro equipo te responderá muy pronto. 🐶💚</p>
+        </div>
+        <div class="modal-footer justify-content-center border-0">
+          <button type="button" class="btn btn-primary px-4" data-bs-dismiss="modal">¡Entendido! 👍</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
